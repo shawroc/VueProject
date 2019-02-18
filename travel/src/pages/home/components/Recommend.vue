@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="title">热销推荐</div>
-    <ul>
+    <ul v-if="showRecommend">
       <li class="item border-bottom" v-for="item of recommendList" :key="item.id">
         <img class="item-img" :src="item.imgUrl" :alt="item.title"/>
         <div class="item-info">
@@ -17,31 +17,12 @@
 <script>
 export default {
   name: 'HomeRecommend',
-  data () {
-    return {
-      recommendList: [
-        {
-          id: '0001',
-          imgUrl: 'http://img1.qunarzz.com/sight/p0/1810/cc/cc47164357acbeb5a3.water.jpg_200x200_151f0405.jpg',
-          title: '杭州云漫温泉',
-          desc: '还原泡汤文化的精髓'
-        }, {
-          id: '0002',
-          imgUrl: 'http://img1.qunarzz.com/sight/p0/1810/cc/cc47164357acbeb5a3.water.jpg_200x200_151f0405.jpg',
-          title: '杭州云漫温泉',
-          desc: '还原泡汤文化的精髓'
-        }, {
-          id: '0003',
-          imgUrl: 'http://img1.qunarzz.com/sight/p0/1810/cc/cc47164357acbeb5a3.water.jpg_200x200_151f0405.jpg',
-          title: '杭州云漫温泉',
-          desc: '还原泡汤文化的精髓'
-        }, {
-          id: '0004',
-          imgUrl: 'http://img1.qunarzz.com/sight/p0/1810/cc/cc47164357acbeb5a3.water.jpg_200x200_151f0405.jpg',
-          title: '杭州云漫温泉',
-          desc: '还原泡汤文化的精髓'
-        }
-      ]
+  props: {
+    recommendList: Array
+  },
+  computed: {
+    showRecommend () {
+      return this.recommendList.length
     }
   }
 }

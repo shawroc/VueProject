@@ -1,133 +1,139 @@
 <template>
-  <div class="list">
-    <div class="area">
-      <div class="title border-topbottom">当前城市</div>
-      <div class="button-list">
-        <div class="button-wrapper">
-            <div class="button">北京</div>
+  <div class="list" ref="wrapper">
+    <div>
+      <div class="area">
+        <div class="title border-topbottom">当前城市</div>
+        <div class="button-list">
+          <div class="button-wrapper">
+              <div class="button">北京</div>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="area">
-      <div class="title border-topbottom">热门城市</div>
-      <div class="button-list">
-        <div class="button-wrapper">
-            <div class="button">北京</div>
+      <div class="area">
+        <div class="title border-topbottom">热门城市</div>
+        <div class="button-list">
+          <div class="button-wrapper">
+              <div class="button">北京</div>
+          </div>
+          <div class="button-wrapper">
+              <div class="button">北京</div>
+          </div>
+          <div class="button-wrapper">
+              <div class="button">北京</div>
+          </div>
+          <div class="button-wrapper">
+              <div class="button">北京</div>
+          </div>
+          <div class="button-wrapper">
+              <div class="button">北京</div>
+          </div>
         </div>
-        <div class="button-wrapper">
-            <div class="button">北京</div>
+      </div>
+      <div class="area">
+        <div class="title border-topbottom">字母排序</div>
+        <div class="alphabet-list">
+          <div class="alphabet-item">A</div>
+          <div class="alphabet-item">B</div>
+          <div class="alphabet-item">C</div>
+          <div class="alphabet-item">D</div>
+          <div class="alphabet-item">E</div>
+          <div class="alphabet-item">F</div>
+          <div class="alphabet-item">G</div>
+          <div class="alphabet-item">H</div>
+          <div class="alphabet-item">I</div>
+          <div class="alphabet-item">J</div>
+          <div class="alphabet-item">K</div>
         </div>
-        <div class="button-wrapper">
-            <div class="button">北京</div>
+      </div>
+      <div class="area">
+        <div class="title border-topbottom">A</div>
+        <div class="item-list">
+          <div class="item border-bottom">杭州</div>
+          <div class="item border-bottom">杭州</div>
+          <div class="item border-bottom">杭州</div>
+          <div class="item border-bottom">杭州</div>
+          <div class="item border-bottom">杭州</div>
+          <div class="item border-bottom">杭州</div>
+          <div class="item border-bottom">杭州</div>
+          <div class="item border-bottom">杭州</div>
         </div>
-        <div class="button-wrapper">
-            <div class="button">北京</div>
+      </div>
+      <div class="area">
+        <div class="title border-topbottom">A</div>
+        <div class="item-list">
+          <div class="item border-bottom">杭州</div>
+          <div class="item border-bottom">杭州</div>
+          <div class="item border-bottom">杭州</div>
+          <div class="item border-bottom">杭州</div>
+          <div class="item border-bottom">杭州</div>
+          <div class="item border-bottom">杭州</div>
+          <div class="item border-bottom">杭州</div>
+          <div class="item border-bottom">杭州</div>
         </div>
-        <div class="button-wrapper">
-            <div class="button">北京</div>
+      </div>
+      <div class="area">
+        <div class="title border-topbottom">A</div>
+        <div class="item-list">
+          <div class="item border-bottom">杭州</div>
+          <div class="item border-bottom">杭州</div>
+          <div class="item border-bottom">杭州</div>
+          <div class="item border-bottom">杭州</div>
+          <div class="item border-bottom">杭州</div>
+          <div class="item border-bottom">杭州</div>
+          <div class="item border-bottom">杭州</div>
+          <div class="item border-bottom">杭州</div>
         </div>
       </div>
-    </div>
-    <div class="area">
-      <div class="title border-topbottom">字母排序</div>
-      <div class="alphabet-list">
-        <div class="alphabet-item">A</div>
-        <div class="alphabet-item">B</div>
-        <div class="alphabet-item">C</div>
-        <div class="alphabet-item">D</div>
-        <div class="alphabet-item">E</div>
-        <div class="alphabet-item">F</div>
-        <div class="alphabet-item">G</div>
-        <div class="alphabet-item">H</div>
-        <div class="alphabet-item">I</div>
-        <div class="alphabet-item">J</div>
-        <div class="alphabet-item">K</div>
+      <div class="area">
+        <div class="title border-topbottom">A</div>
+        <div class="item-list">
+          <div class="item border-bottom">杭州</div>
+          <div class="item border-bottom">杭州</div>
+          <div class="item border-bottom">杭州</div>
+          <div class="item border-bottom">杭州</div>
+          <div class="item border-bottom">杭州</div>
+          <div class="item border-bottom">杭州</div>
+          <div class="item border-bottom">杭州</div>
+          <div class="item border-bottom">杭州</div>
+        </div>
       </div>
-    </div>
-    <div class="area">
-      <div class="title border-topbottom">A</div>
-      <div class="item-list">
-        <div class="item border-bottom">杭州</div>
-        <div class="item border-bottom">杭州</div>
-        <div class="item border-bottom">杭州</div>
-        <div class="item border-bottom">杭州</div>
-        <div class="item border-bottom">杭州</div>
-        <div class="item border-bottom">杭州</div>
-        <div class="item border-bottom">杭州</div>
-        <div class="item border-bottom">杭州</div>
+      <div class="area">
+        <div class="title border-topbottom">A</div>
+        <div class="item-list">
+          <div class="item border-bottom">杭州</div>
+          <div class="item border-bottom">杭州</div>
+          <div class="item border-bottom">杭州</div>
+          <div class="item border-bottom">杭州</div>
+          <div class="item border-bottom">杭州</div>
+          <div class="item border-bottom">杭州</div>
+          <div class="item border-bottom">杭州</div>
+          <div class="item border-bottom">杭州</div>
+        </div>
       </div>
-    </div>
-    <div class="area">
-      <div class="title border-topbottom">A</div>
-      <div class="item-list">
-        <div class="item border-bottom">杭州</div>
-        <div class="item border-bottom">杭州</div>
-        <div class="item border-bottom">杭州</div>
-        <div class="item border-bottom">杭州</div>
-        <div class="item border-bottom">杭州</div>
-        <div class="item border-bottom">杭州</div>
-        <div class="item border-bottom">杭州</div>
-        <div class="item border-bottom">杭州</div>
-      </div>
-    </div>
-    <div class="area">
-      <div class="title border-topbottom">A</div>
-      <div class="item-list">
-        <div class="item border-bottom">杭州</div>
-        <div class="item border-bottom">杭州</div>
-        <div class="item border-bottom">杭州</div>
-        <div class="item border-bottom">杭州</div>
-        <div class="item border-bottom">杭州</div>
-        <div class="item border-bottom">杭州</div>
-        <div class="item border-bottom">杭州</div>
-        <div class="item border-bottom">杭州</div>
-      </div>
-    </div>
-    <div class="area">
-      <div class="title border-topbottom">A</div>
-      <div class="item-list">
-        <div class="item border-bottom">杭州</div>
-        <div class="item border-bottom">杭州</div>
-        <div class="item border-bottom">杭州</div>
-        <div class="item border-bottom">杭州</div>
-        <div class="item border-bottom">杭州</div>
-        <div class="item border-bottom">杭州</div>
-        <div class="item border-bottom">杭州</div>
-        <div class="item border-bottom">杭州</div>
-      </div>
-    </div>
-    <div class="area">
-      <div class="title border-topbottom">A</div>
-      <div class="item-list">
-        <div class="item border-bottom">杭州</div>
-        <div class="item border-bottom">杭州</div>
-        <div class="item border-bottom">杭州</div>
-        <div class="item border-bottom">杭州</div>
-        <div class="item border-bottom">杭州</div>
-        <div class="item border-bottom">杭州</div>
-        <div class="item border-bottom">杭州</div>
-        <div class="item border-bottom">杭州</div>
-      </div>
-    </div>
-    <div class="area">
-      <div class="title border-topbottom">A</div>
-      <div class="item-list">
-        <div class="item border-bottom">杭州</div>
-        <div class="item border-bottom">杭州</div>
-        <div class="item border-bottom">杭州</div>
-        <div class="item border-bottom">杭州</div>
-        <div class="item border-bottom">杭州</div>
-        <div class="item border-bottom">杭州</div>
-        <div class="item border-bottom">杭州</div>
-        <div class="item border-bottom">杭州</div>
+      <div class="area">
+        <div class="title border-topbottom">A</div>
+        <div class="item-list">
+          <div class="item border-bottom">杭州</div>
+          <div class="item border-bottom">杭州</div>
+          <div class="item border-bottom">杭州</div>
+          <div class="item border-bottom">杭州</div>
+          <div class="item border-bottom">杭州</div>
+          <div class="item border-bottom">杭州</div>
+          <div class="item border-bottom">杭州</div>
+          <div class="item border-bottom">杭州</div>
+        </div>
       </div>
     </div>
   </div>
 </template>
 
 <script>
+import Bscroll from 'better-scroll'
 export default {
-  name: 'CityList'
+  name: 'CityList',
+  mounted () {
+    this.scroll = new Bscroll(this.$refs.wrapper)
+  }
 }
 </script>
 
@@ -152,7 +158,7 @@ export default {
     overflow: hidden
     .title
       color: #666
-      line-height: 0.44rem
+      line-height: 0.54rem
       background: #eee
       padding-left: 0.2rem
       font-size: 0.26rem

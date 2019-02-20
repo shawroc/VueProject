@@ -20,12 +20,12 @@
       <div class="area">
         <div class="title border-topbottom">字母排序</div>
         <div class="alphabet-list">
-          <div class="alphabet-item" v-for="(item, key) of cities" :key="key">
+          <div class="alphabet-item" v-for="(item, key) of cities" :key="key" @click="handlerAlphabetLetterClick">
             {{key}}
           </div>
         </div>
       </div>
-      <div class="area" v-for="(item, key) of cities" :key="key">
+      <div class="area" v-for="(item, key) of cities" :key="key" :ref="key">
         <div class="title border-topbottom">{{key}}</div>
         <div class="item-list">
           <div class="item border-bottom" v-for="innerItem of item" :key="innerItem.id">
@@ -43,10 +43,24 @@ export default {
   name: 'CityList',
   props: {
     cities: Object,
-    hotCities: Array
+    hotCities: Array,
+    letter: String
+  },
+  methods: {
+    handlerAlphabetLetterClick (e) {
+      this.$emit('change', e.target.innerText)
+    }
   },
   mounted () {
     this.scroll = new Bscroll(this.$refs.wrapper)
+  },
+  watch: {
+    letter () {
+      if (this.letter) {
+        const element = this.$refs[this.letter][0]
+        this.scroll.scrollToElement(element)
+      }
+    }
   }
 }
 </script>

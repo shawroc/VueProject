@@ -68,6 +68,7 @@ export default {
       color: #fff
       font-size: 0.4rem
   .header-fixed
+    z-index: 1000
     height: $headerHeight
     line-height: $headerHeight
     font-size: 0.32rem
